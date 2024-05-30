@@ -1,0 +1,9 @@
+go 1.22
+
+use (
+	./client/grpc
+	./registry/kubernetes
+	./server/grpc
+	./transport/grpc
+	./wrapper/trace/opentracing
+)
