@@ -5,5 +5,7 @@ use (
 	./registry/kubernetes
 	./server/grpc
 	./transport/grpc
+	./wrapper/service
+	./wrapper/trace/opentelemetry
 	./wrapper/trace/opentracing
 )
