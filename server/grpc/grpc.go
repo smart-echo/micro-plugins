@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	proto "google.golang.org/protobuf/runtime/protoiface"
 	"github.com/smart-echo/micro/broker"
 	"github.com/smart-echo/micro/errors"
 	"github.com/smart-echo/micro/logger"
@@ -432,7 +432,7 @@ func (g *grpcServer) processRequest(stream grpc.ServerStream, service *service, 
 				if err != nil {
 					return err
 				}
-			case proto.Message:
+			case proto.MessageV1:
 				// user defined error that proto based we can attach it to grpc status
 				statusCode = convertCode(appErr)
 				statusDesc = appErr.Error()
@@ -505,7 +505,7 @@ func (g *grpcServer) processStream(stream grpc.ServerStream, service *service, m
 			if err != nil {
 				return err
 			}
-		case proto.Message:
+		case proto.MessageV1:
 			// user defined error that proto based we can attach it to grpc status
 			statusCode = convertCode(appErr)
 			statusDesc = appErr.Error()

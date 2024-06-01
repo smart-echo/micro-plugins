@@ -22,6 +22,7 @@ import (
 	pnet "github.com/smart-echo/micro/util/net"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/encoding"
 	gmetadata "google.golang.org/grpc/metadata"
 )
@@ -71,7 +72,7 @@ func (g *grpcClient) secure(addr string) grpc.DialOption {
 	}
 
 	// other fallback to insecure
-	return grpc.WithInsecure()
+	return grpc.WithTransportCredentials(insecure.NewCredentials())
 }
 
 func (g *grpcClient) next(request client.Request, opts client.CallOptions) (selector.Next, error) {

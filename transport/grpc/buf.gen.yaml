@@ -1,0 +1,16 @@
+version: v2
+managed:
+  enabled: true
+  override:
+    - file_option: go_package_prefix
+      value: github.com/smart-echo/micro-plugins/transport/grpc
+plugins:
+  - remote: buf.build/protocolbuffers/go
+    out: .
+    opt: paths=source_relative
+  - remote: buf.build/grpc/go
+    out: .
+    opt: paths=source_relative
+  - local: protoc-gen-micro
+    out: .
+    opt: paths=source_relative

@@ -8,14 +8,14 @@ import (
 
 type grpcTransportClient struct {
 	conn   *grpc.ClientConn
-	stream pb.Transport_StreamClient
+	stream pb.Transport_StreamStream
 
 	local  string
 	remote string
 }
 
 type grpcTransportSocket struct {
-	stream pb.Transport_StreamServer
+	stream pb.Transport_StreamStream
 	local  string
 	remote string
 }

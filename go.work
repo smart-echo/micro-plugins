@@ -2,9 +2,21 @@ go 1.22
 
 use (
 	./client/grpc
+	./client/http
+	./client/mucp
+	./registry/consul
+	./registry/etcd
+	./registry/eureka
+	./registry/gossip
 	./registry/kubernetes
+	./registry/multi
+	./registry/nacos
+	./registry/nats
 	./server/grpc
 	./transport/grpc
+	./transport/http
+	./transport/memory
+	./transport/quic
 	./wrapper/service
 	./wrapper/trace/opentelemetry
 	./wrapper/trace/opentracing

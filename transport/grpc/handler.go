@@ -1,6 +1,7 @@
 package grpc
 
 import (
+	"context"
 	"runtime/debug"
 
 	pb "github.com/smart-echo/micro-plugins/transport/grpc/proto"
@@ -16,7 +17,7 @@ type microTransport struct {
 	fn   func(transport.Socket)
 }
 
-func (m *microTransport) Stream(ts pb.Transport_StreamServer) (err error) {
+func (m *microTransport) Stream(ctx context.Context, ts pb.Transport_StreamStream) (err error) {
 	sock := &grpcTransportSocket{
 		stream: ts,
 		local:  m.addr,

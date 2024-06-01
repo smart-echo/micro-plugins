@@ -9,7 +9,7 @@ import (
 )
 
 func extractValue(v reflect.Type, d int) *registry.Value {
-	if d == 3 {
+	if d == 6 {
 		return nil
 	}
 	if v == nil {
@@ -18,6 +18,11 @@ func extractValue(v reflect.Type, d int) *registry.Value {
 
 	if v.Kind() == reflect.Ptr {
 		v = v.Elem()
+	}
+
+	// slices and maps don't have a defined name
+	if v.Kind() != reflect.Slice && v.Kind() != reflect.Map && len(v.Name()) == 0 {
+		return nil
 	}
 
 	arg := &registry.Value{
@@ -29,9 +34,6 @@ func extractValue(v reflect.Type, d int) *registry.Value {
 	case reflect.Struct:
 		for i := 0; i < v.NumField(); i++ {
 			f := v.Field(i)
-			if f.PkgPath != "" {
-				continue
-			}
 			val := extractValue(f.Type, d+1)
 			if val == nil {
 				continue
@@ -44,11 +46,13 @@ func extractValue(v reflect.Type, d int) *registry.Value {
 					continue
 				}
 				val.Name = parts[0]
+			} else {
+				continue
 			}
 
 			// if there's no name default it
 			if len(val.Name) == 0 {
-				val.Name = v.Field(i).Name
+				continue
 			}
 
 			arg.Values = append(arg.Values, val)
@@ -59,6 +63,18 @@ func extractValue(v reflect.Type, d int) *registry.Value {
 			p = p.Elem()
 		}
 		arg.Type = "[]" + p.Name()
+	case reflect.Map:
+		p := v.Elem()
+		if p.Kind() == reflect.Ptr {
+			p = p.Elem()
+		}
+		key := v.Key()
+		if key.Kind() == reflect.Ptr {
+			key = key.Elem()
+		}
+
+		arg.Type = fmt.Sprintf("map[%s]%s", key.Name(), p.Name())
+
 	}
 
 	return arg
