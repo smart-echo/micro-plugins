@@ -14,7 +14,6 @@ import (
 	"sync"
 	"time"
 
-	proto "google.golang.org/protobuf/runtime/protoiface"
 	"github.com/smart-echo/micro/broker"
 	"github.com/smart-echo/micro/errors"
 	"github.com/smart-echo/micro/logger"
@@ -27,6 +26,7 @@ import (
 	mgrpc "github.com/smart-echo/micro/util/grpc"
 	mnet "github.com/smart-echo/micro/util/net"
 	"golang.org/x/net/netutil"
+	proto "google.golang.org/protobuf/runtime/protoiface"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
@@ -279,7 +279,7 @@ func (g *grpcServer) handler(srv interface{}, stream grpc.ServerStream) error {
 	if g.opts.Router != nil {
 		cc, err := g.newGRPCCodec(ct)
 		if err != nil {
-			return errors.InternalServerError("go.micro.server", err.Error())
+			return errors.InternalServerError("micro.server", err.Error())
 		}
 		codec := &grpcCodec{
 			method:   fmt.Sprintf("%s.%s", serviceName, methodName),

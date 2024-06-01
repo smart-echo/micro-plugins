@@ -11,6 +11,9 @@ plugins:
   - remote: buf.build/protocolbuffers/go
     out: .
     opt: paths=source_relative
+  - remote: buf.build/grpc/go
+    out: .
+    opt: paths=source_relative
   - local: protoc-gen-micro
     out: .
     opt: paths=source_relative

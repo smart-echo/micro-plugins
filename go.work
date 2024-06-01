@@ -17,6 +17,14 @@ use (
 	./transport/http
 	./transport/memory
 	./transport/quic
+	./wrapper/breaker/gobreaker
+	./wrapper/breaker/hystrix
+	./wrapper/monitoring/prometheus
+	./wrapper/ratelimiter/ratelimit
+	./wrapper/ratelimiter/uber
+	./wrapper/select/roundrobin
+	./wrapper/select/shard
+	./wrapper/select/version
 	./wrapper/service
 	./wrapper/trace/opentelemetry
 	./wrapper/trace/opentracing

@@ -6,8 +6,6 @@ import (
 	"crypto/tls"
 	"net"
 
-	"github.com/smart-echo/micro/client"
-	"github.com/smart-echo/micro/server"
 	"github.com/smart-echo/micro/transport"
 	maddr "github.com/smart-echo/micro/util/addr"
 	"github.com/smart-echo/micro/util/cmd"
@@ -116,17 +114,20 @@ func (t *grpcTransport) Dial(addr string, opts ...transport.DialOption) (transpo
 		creds := credentials.NewTLS(config)
 		options = append(options, grpc.WithTransportCredentials(creds))
 	} else {
-		options = append(options, grpc.WithInsecure())
+		options = append(options, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	}
 
 	// dial the server
-	conn, err := grpc.Dial(addr, options...)
+	conn, err := grpc.NewClient(addr, options...)
 	if err != nil {
 		return nil, err
 	}
 
+	ctx, cancel := context.WithTimeout(context.Background(), dopts.Timeout)
+	defer cancel()
+
 	// create stream
-	stream, err := pb.NewTransportClient(conn).Stream(context.Background())
+	stream, err := pb.NewTransportClient(conn).Stream(ctx)
 	if err != nil {
 		return nil, err
 	}
