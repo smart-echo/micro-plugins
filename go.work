@@ -1,6 +1,7 @@
 go 1.22
 
 use (
+	./auth/jwt
 	./client/grpc
 	./client/http
 	./client/mucp
