@@ -20,6 +20,12 @@ use (
 	./registry/nacos
 	./registry/nats
 	./server/grpc
+	./store/file
+	./store/memory
+	./store/mysql
+	./store/nats-js
+	./store/nats-js-kv
+	./store/redis
 	./transport/grpc
 	./transport/http
 	./transport/memory
