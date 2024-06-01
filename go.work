@@ -2,6 +2,12 @@ go 1.22
 
 use (
 	./auth/jwt
+	./broker/grpc
+	./broker/http
+	./broker/kafka
+	./broker/memory
+	./broker/nats
+	./broker/redis
 	./client/grpc
 	./client/http
 	./client/mucp
