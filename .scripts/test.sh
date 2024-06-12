@@ -99,7 +99,7 @@ function find_changes() {
 
 # Find all go directories.
 function find_all() {
-	find . -name 'go.mod' -printf '%h\n'
+	find ./ -name 'go.mod' -printf '%h\n'
 }
 
 # Get the dir list based on command type.

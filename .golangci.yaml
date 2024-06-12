@@ -3,7 +3,7 @@
 
 # options for analysis running
 run:
-  # go: '1.18'
+  # go: '1.22'
   # default concurrency is a available CPU number
   # concurrency: 4
 
@@ -39,7 +39,7 @@ output:
   # Example: "checkstyle:report.json,colored-line-number"
   #
   # Default: colored-line-number
-  format: colored-line-number
+  formats: colored-line-number
   # Print lines of code with issue.
   # Default: true
   print-issued-lines: true
@@ -174,16 +174,6 @@ linters:
   disable-all: false
   fast: false
   disable:
-    - golint
-    - varcheck
-    - ifshort
-    - structcheck
-    - deadcode
-    # - nosnakecase
-    - interfacer
-    - maligned
-    - scopelint
-    - exhaustivestruct
     - testpackage
     - promlinter
     - nonamedreturns
@@ -191,7 +181,6 @@ linters:
     - gofumpt
     - nlreturn
     - tagliatelle
-    - nosnakecase
     - errchkjson
 
     # Can be considered to be enabled
@@ -202,7 +191,6 @@ linters:
     - paralleltest
     - ireturn
     - gomnd
-    - goerr113
     - exhaustruct
     - containedctx
     - godox

@@ -99,6 +99,10 @@ github.com/skeema/knownhosts v1.2.2 h1:Iug2P4fLmDw9f41PB6thxUkNUkJzB5i+1/exaj40L
 github.com/skeema/knownhosts v1.2.2/go.mod h1:xYbVRSPxqBZFrdmDyMmsOs+uX1UZC3nTN3ThzgDxUwo=
 github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc h1:qPLO2W9J3pIWwwDf1Kq++bk9vRqkYXCToxMtqqCXgMA=
 github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc/go.mod h1:9J/IkTVOHJBzn6dxs84KIPMD8E2veQrzC4/Q2e7XifQ=
+github.com/smart-echo/micro-plugins/client/grpc v0.0.0-20240612081905-85d27a8ee5ec h1:WWXanDAuNNkOkZ/NvEtiLJX6eN/58dHqRjFouUuLLBs=
+github.com/smart-echo/micro-plugins/client/grpc v0.0.0-20240612081905-85d27a8ee5ec/go.mod h1:s6f6Y14ToPgpDBrs/pioTpfsUFxwV6ijJCzbzDT+Iw8=
+github.com/smart-echo/micro-plugins/transport/grpc v0.0.0-20240612081905-85d27a8ee5ec h1:5cDwBmjXNSb2zsOBhMWu+twSmc1DV2kX87Ac3DNVLfg=
+github.com/smart-echo/micro-plugins/transport/grpc v0.0.0-20240612081905-85d27a8ee5ec/go.mod h1:w/i8wVbGNMNIvco0MDiYsb4I437zjsFLfU9cWqDVq0k=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=

@@ -4,8 +4,8 @@ go 1.22
 
 require (
 	github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc
-	github.com/smart-echo/micro-plugins/client/grpc v0.0.0-00010101000000-000000000000
-	github.com/smart-echo/micro-plugins/transport/grpc v0.0.0-00010101000000-000000000000
+	github.com/smart-echo/micro-plugins/client/grpc v0.0.0-20240612081905-85d27a8ee5ec
+	github.com/smart-echo/micro-plugins/transport/grpc v0.0.0-20240612081905-85d27a8ee5ec
 	github.com/stretchr/testify v1.9.0
 	golang.org/x/net v0.25.0
 	google.golang.org/genproto/googleapis/api v0.0.0-20240528184218-531527333157
@@ -63,7 +63,3 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace (
-	github.com/smart-echo/micro-plugins/client/grpc => ../../client/grpc
-	github.com/smart-echo/micro-plugins/transport/grpc => ../../transport/grpc
-)
