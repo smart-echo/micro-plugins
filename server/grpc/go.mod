@@ -3,7 +3,7 @@ module github.com/smart-echo/micro-plugins/server/grpc
 go 1.22
 
 require (
-	github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc
+	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
 	github.com/smart-echo/micro-plugins/client/grpc v0.0.0-20240612081905-85d27a8ee5ec
 	github.com/smart-echo/micro-plugins/transport/grpc v0.0.0-20240612081905-85d27a8ee5ec
 	github.com/stretchr/testify v1.9.0
@@ -62,4 +62,3 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-

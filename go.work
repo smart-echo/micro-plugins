@@ -20,6 +20,8 @@ use (
 	./registry/nacos
 	./registry/nats
 	./server/grpc
+	./server/http
+	./server/mucp
 	./store/file
 	./store/memory
 	./store/mysql

@@ -5,7 +5,7 @@ go 1.22
 require (
 	github.com/prometheus/client_golang v1.19.1
 	github.com/prometheus/client_model v0.6.1
-	github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc
+	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
 	github.com/stretchr/testify v1.9.0
 )
 
@@ -22,7 +22,6 @@ require (
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/prometheus/common v0.53.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
-	github.com/rogpeppe/go-internal v1.12.0 // indirect
 	golang.org/x/mod v0.17.0 // indirect
 	golang.org/x/net v0.25.0 // indirect
 	golang.org/x/sync v0.7.0 // indirect

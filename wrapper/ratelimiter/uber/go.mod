@@ -3,7 +3,7 @@ module github.com/smart-echo/micro-plugins/wrapper/ratelimiter/uber
 go 1.22
 
 require (
-	github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc
+	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
 	go.uber.org/ratelimit v0.3.1
 )
 

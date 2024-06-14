@@ -2,7 +2,7 @@ module github.com/smart-echo/micro-plugins/registry/multi
 
 go 1.22
 
-require github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc
+require github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
 
 require (
 	github.com/google/uuid v1.6.0 // indirect

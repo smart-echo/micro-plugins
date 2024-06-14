@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/afex/hystrix-go v0.0.0-20180502004556-fa1af6a1f4f5
-	github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc
+	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
 )
 
 require (

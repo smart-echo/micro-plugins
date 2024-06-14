@@ -160,8 +160,7 @@ github.com/sirupsen/logrus v1.4.2/go.mod h1:tLMulIdttU9McNUspp0xgXVQah82FyeX6Mwd
 github.com/sirupsen/logrus v1.7.0/go.mod h1:yWOB1SBYBC5VeMP7gHvWumXLIWorT60ONWic61uBYv0=
 github.com/skeema/knownhosts v1.2.2 h1:Iug2P4fLmDw9f41PB6thxUkNUkJzB5i+1/exaj40L3A=
 github.com/skeema/knownhosts v1.2.2/go.mod h1:xYbVRSPxqBZFrdmDyMmsOs+uX1UZC3nTN3ThzgDxUwo=
-github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc h1:qPLO2W9J3pIWwwDf1Kq++bk9vRqkYXCToxMtqqCXgMA=
-github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc/go.mod h1:9J/IkTVOHJBzn6dxs84KIPMD8E2veQrzC4/Q2e7XifQ=
+github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e h1:RFobOaLagTMht14cehqsDBR0yeTaCePOUyxrjCHxeEI=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/objx v0.1.1/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=

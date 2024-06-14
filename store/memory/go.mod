@@ -6,7 +6,7 @@ require (
 	github.com/kr/pretty v0.3.1
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pkg/errors v0.9.1
-	github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc
+	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
 )
 
 require (

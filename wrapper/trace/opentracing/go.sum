@@ -28,8 +28,7 @@ github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 h1:Jamvg5psRI
 github.com/rogpeppe/go-internal v1.9.0/go.mod h1:WtVeX8xhTBvf0smdhujwtBcq4Qrzq/fJaraNFVN+nFs=
 github.com/rogpeppe/go-internal v1.12.0 h1:exVL4IDcn6na9z1rAb56Vxr+CgyK3nn3O+epU5NdKM8=
 github.com/rogpeppe/go-internal v1.12.0/go.mod h1:E+RYuTGaKKdloAfM02xzb0FW3Paa99yedzYV+kq4uf4=
-github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc h1:qPLO2W9J3pIWwwDf1Kq++bk9vRqkYXCToxMtqqCXgMA=
-github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc/go.mod h1:9J/IkTVOHJBzn6dxs84KIPMD8E2veQrzC4/Q2e7XifQ=
+github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e h1:RFobOaLagTMht14cehqsDBR0yeTaCePOUyxrjCHxeEI=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=

@@ -3,7 +3,7 @@ module github.com/smart-echo/micro-plugins/wrapper/breaker/gobreaker
 go 1.22
 
 require (
-	github.com/smart-echo/micro v0.0.0-20240528162135-5d8104e76bcc
+	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
 	github.com/sony/gobreaker v1.0.0
 )
 
