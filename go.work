@@ -22,6 +22,7 @@ use (
 	./server/grpc
 	./server/http
 	./server/mucp
+	./store/cockroach
 	./store/file
 	./store/memory
 	./store/mysql
