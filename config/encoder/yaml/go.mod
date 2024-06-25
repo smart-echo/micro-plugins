@@ -1,6 +1,6 @@
 module github.com/smart-echo/micro-plugins/config/encoder/yaml
 
-go 1.22.3
+go 1.22
 
 require (
 	github.com/ghodss/yaml v1.0.0
