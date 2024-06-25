@@ -11,7 +11,7 @@ import (
 	"github.com/smart-echo/micro"
 	"github.com/smart-echo/micro/broker"
 	"github.com/smart-echo/micro/client"
-	"github.com/smart-echo/micro/errors"
+	perror "github.com/smart-echo/micro/proto/errors/v1"
 	"github.com/smart-echo/micro/registry"
 	"github.com/smart-echo/micro/server"
 	"github.com/smart-echo/micro/transport"
@@ -38,7 +38,7 @@ func (s *testServer) HandleError(ctx context.Context, msg *pb.Request) error {
 // TestHello implements helloworld.GreeterServer.
 func (s *testServer) CallPcre(ctx context.Context, req *pb.Request, rsp *pb.Response) error {
 	if req.Name == "Error" {
-		return &errors.Error{Id: "1", Code: 99, Detail: "detail"}
+		return &perror.Error{Id: "1", Code: 99, Detail: "detail"}
 	}
 
 	rsp.Msg = "Hello " + req.Name
@@ -48,7 +48,7 @@ func (s *testServer) CallPcre(ctx context.Context, req *pb.Request, rsp *pb.Resp
 // TestHello implements helloworld.GreeterServer.
 func (s *testServer) CallPcreInvalid(ctx context.Context, req *pb.Request, rsp *pb.Response) error {
 	if req.Name == "Error" {
-		return &errors.Error{Id: "1", Code: 99, Detail: "detail"}
+		return &perror.Error{Id: "1", Code: 99, Detail: "detail"}
 	}
 
 	rsp.Msg = "Hello " + req.Name
@@ -58,7 +58,7 @@ func (s *testServer) CallPcreInvalid(ctx context.Context, req *pb.Request, rsp *
 // TestHello implements helloworld.GreeterServer.
 func (s *testServer) Call(ctx context.Context, req *pb.Request, rsp *pb.Response) error {
 	if req.Name == "Error" {
-		return &errors.Error{Id: "1", Code: 99, Detail: "detail\xc5"}
+		return &perror.Error{Id: "1", Code: 99, Detail: "detail\xc5"}
 	}
 
 	rsp.Msg = "Hello " + req.Name
@@ -184,7 +184,7 @@ func testGRPCServer(t *testing.T, s server.Server, c client.Client, r registry.R
 		if !ok {
 			t.Fatalf("invalid error received %#+v\n", err)
 		}
-		verr, ok := st.Details()[0].(*errors.Error)
+		verr, ok := st.Details()[0].(*perror.Error)
 		if !ok {
 			t.Fatalf("invalid error received %#+v\n", st.Details()[0])
 		}

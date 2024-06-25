@@ -2,7 +2,7 @@ module github.com/smart-echo/micro-plugins/wrapper/service
 
 go 1.22
 
-require github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
+require github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
 
 require (
 	dario.cat/mergo v1.0.0 // indirect

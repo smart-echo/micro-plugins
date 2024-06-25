@@ -5,7 +5,7 @@ go 1.22
 require (
 	github.com/hudl/fargo v1.4.0
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
-	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
+	github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
 	golang.org/x/oauth2 v0.20.0
 )
 

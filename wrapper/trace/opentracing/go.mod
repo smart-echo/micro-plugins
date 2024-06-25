@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/opentracing/opentracing-go v1.2.1-0.20220228012449-10b1cf09e00b
-	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
+	github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
 	github.com/stretchr/testify v1.9.0
 )
 

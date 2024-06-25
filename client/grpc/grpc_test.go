@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/smart-echo/micro/client"
-	"github.com/smart-echo/micro/errors"
+	perror "github.com/smart-echo/micro/proto/errors/v1"
 	"github.com/smart-echo/micro/registry"
 	"github.com/smart-echo/micro/selector"
 	pgrpc "google.golang.org/grpc"
@@ -21,7 +21,7 @@ type greeterServer struct {
 // SayHello implements helloworld.GreeterServer.
 func (g *greeterServer) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
 	if in.Name == "Error" {
-		return nil, &errors.Error{Id: "1", Code: 99, Detail: "detail"}
+		return nil, &perror.Error{Id: "1", Code: 99, Detail: "detail"}
 	}
 	return &pb.HelloReply{Message: "Hello " + in.Name}, nil
 }
@@ -101,7 +101,7 @@ func TestGRPCClient(t *testing.T) {
 		t.Fatal("nil error received")
 	}
 
-	verr, ok := err.(*errors.Error)
+	verr, ok := err.(*perror.Error)
 	if !ok {
 		t.Fatalf("invalid error received %#+v\n", err)
 	}

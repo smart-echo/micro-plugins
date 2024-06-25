@@ -3,7 +3,7 @@ module github.com/smart-echo/micro-plugins/client/grpc
 go 1.22
 
 require (
-	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
+	github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
 	google.golang.org/grpc v1.64.0
 	google.golang.org/grpc/examples v0.0.0-20240529235625-24e902437554
 	google.golang.org/protobuf v1.34.1

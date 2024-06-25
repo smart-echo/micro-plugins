@@ -6,7 +6,7 @@ require (
 	github.com/kr/pretty v0.3.1
 	github.com/lib/pq v1.10.9
 	github.com/pkg/errors v0.9.1
-	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
+	github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
 )
 
 require (

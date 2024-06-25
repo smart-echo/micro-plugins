@@ -16,6 +16,7 @@ import (
 
 	"github.com/smart-echo/micro/broker"
 	"github.com/smart-echo/micro/errors"
+	perror "github.com/smart-echo/micro/proto/errors/v1"
 	"github.com/smart-echo/micro/logger"
 	meta "github.com/smart-echo/micro/metadata"
 	"github.com/smart-echo/micro/registry"
@@ -423,7 +424,7 @@ func (g *grpcServer) processRequest(stream grpc.ServerStream, service *service, 
 		if appErr := fn(ctx, r, replyv.Interface()); appErr != nil {
 			var errStatus *status.Status
 			switch verr := appErr.(type) {
-			case *errors.Error:
+			case *perror.Error:
 				// micro.Error now proto based and we can attach it to grpc status
 				statusCode = microError(verr)
 				statusDesc = verr.Error()
@@ -496,7 +497,7 @@ func (g *grpcServer) processStream(stream grpc.ServerStream, service *service, m
 		var err error
 		var errStatus *status.Status
 		switch verr := appErr.(type) {
-		case *errors.Error:
+		case *perror.Error:
 			// micro.Error now proto based and we can attach it to grpc status
 			statusCode = microError(verr)
 			statusDesc = verr.Error()

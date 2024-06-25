@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/mitchellh/hashstructure v1.1.0
-	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
+	github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
 	go.etcd.io/etcd/api/v3 v3.5.14
 	go.etcd.io/etcd/client/v3 v3.5.14
 	go.uber.org/zap v1.27.0

@@ -3,8 +3,8 @@ module github.com/smart-echo/micro-plugins/registry/nats
 go 1.22
 
 require (
-	github.com/nats-io/nats.go v1.35.0
-	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
+	github.com/nats-io/nats.go v1.36.0
+	github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
 )
 
 require (

@@ -15,6 +15,7 @@ import (
 	"github.com/smart-echo/micro/client"
 	raw "github.com/smart-echo/micro/codec/bytes"
 	"github.com/smart-echo/micro/errors"
+	perror "github.com/smart-echo/micro/proto/errors/v1"
 	"github.com/smart-echo/micro/metadata"
 	"github.com/smart-echo/micro/registry"
 	"github.com/smart-echo/micro/selector"
@@ -466,7 +467,7 @@ func (g *grpcClient) Call(ctx context.Context, req client.Request, rsp interface
 		// make the call
 		err = gcall(ctx, node, req, rsp, callOpts)
 		g.opts.Selector.Mark(service, node, err)
-		if verr, ok := err.(*errors.Error); ok {
+		if verr, ok := err.(*perror.Error); ok {
 			return verr
 		}
 

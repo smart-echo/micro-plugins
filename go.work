@@ -1,4 +1,4 @@
-go 1.22
+go 1.22.3
 
 use (
 	./auth/jwt
@@ -11,6 +11,8 @@ use (
 	./client/grpc
 	./client/http
 	./client/mucp
+	./config/encoder/yaml
+	./config/source/nats
 	./registry/consul
 	./registry/etcd
 	./registry/eureka

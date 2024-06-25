@@ -6,7 +6,7 @@ import (
 
 	"github.com/sony/gobreaker"
 	"github.com/smart-echo/micro/client"
-	"github.com/smart-echo/micro/errors"
+	errors "github.com/smart-echo/micro/proto/errors/v1"
 	"github.com/smart-echo/micro/registry"
 	"github.com/smart-echo/micro/selector"
 )

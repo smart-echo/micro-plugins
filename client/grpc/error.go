@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/smart-echo/micro/errors"
+	perror "github.com/smart-echo/micro/proto/errors/v1"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )
@@ -15,7 +16,7 @@ func microError(err error) error {
 		return nil
 	}
 
-	if verr, ok := err.(*errors.Error); ok {
+	if verr, ok := err.(*perror.Error); ok {
 		return verr
 	}
 

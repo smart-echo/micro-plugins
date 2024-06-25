@@ -5,7 +5,7 @@ go 1.22
 require (
 	github.com/cornelk/hashmap v1.0.8
 	github.com/nats-io/nats-server/v2 v2.10.16
-	github.com/smart-echo/micro v0.0.0-20240610084539-75070f770b9e
+	github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
 )
 
 require (
@@ -54,7 +54,7 @@ require (
 require (
 	github.com/google/uuid v1.6.0
 	github.com/miekg/dns v1.1.59 // indirect
-	github.com/nats-io/nats.go v1.35.0
+	github.com/nats-io/nats.go v1.36.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.9.0
 	golang.org/x/crypto v0.23.0 // indirect

@@ -3,7 +3,7 @@ package grpc
 import (
 	"net/http"
 
-	"github.com/smart-echo/micro/errors"
+	perror "github.com/smart-echo/micro/proto/errors/v1"
 	"google.golang.org/grpc/codes"
 )
 
@@ -21,7 +21,7 @@ var errMapping = map[int32]codes.Code{
 	http.StatusServiceUnavailable:  codes.Unavailable,
 }
 
-func microError(err *errors.Error) codes.Code {
+func microError(err *perror.Error) codes.Code {
 	if err == nil {
 		return codes.OK
 	}
