@@ -1,4 +1,4 @@
-go 1.22.3
+go 1.22
 
 use (
 	./auth/jwt
@@ -7,6 +7,7 @@ use (
 	./broker/kafka
 	./broker/memory
 	./broker/nats
+	./broker/proxy
 	./broker/redis
 	./client/grpc
 	./client/http
@@ -35,6 +36,7 @@ use (
 	./transport/http
 	./transport/memory
 	./transport/quic
+	./transport/utp
 	./wrapper/breaker/gobreaker
 	./wrapper/breaker/hystrix
 	./wrapper/monitoring/prometheus
@@ -46,4 +48,5 @@ use (
 	./wrapper/service
 	./wrapper/trace/opentelemetry
 	./wrapper/trace/opentracing
+	./wrapper/validator
 )

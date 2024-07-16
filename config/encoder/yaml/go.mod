@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/ghodss/yaml v1.0.0
-	github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
+	github.com/smart-echo/micro v0.0.0-20240716114624-7ccbfcfd7dc8
 )
 
 require (

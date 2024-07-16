@@ -3,11 +3,11 @@ module github.com/smart-echo/micro-plugins/server/grpc
 go 1.22
 
 require (
-	github.com/smart-echo/micro v0.0.0-20240624060019-424129114cc0
+	github.com/smart-echo/micro v0.0.0-20240716114624-7ccbfcfd7dc8
 	github.com/smart-echo/micro-plugins/client/grpc v0.0.0-20240612081905-85d27a8ee5ec
 	github.com/smart-echo/micro-plugins/transport/grpc v0.0.0-20240612081905-85d27a8ee5ec
 	github.com/stretchr/testify v1.9.0
-	golang.org/x/net v0.25.0
+	golang.org/x/net v0.27.0
 	google.golang.org/genproto/googleapis/api v0.0.0-20240528184218-531527333157
 	google.golang.org/grpc v1.64.0
 	google.golang.org/protobuf v1.34.1
@@ -51,12 +51,12 @@ require (
 	github.com/urfave/cli/v2 v2.27.2 // indirect
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
-	golang.org/x/crypto v0.23.0 // indirect
+	golang.org/x/crypto v0.25.0 // indirect
 	golang.org/x/mod v0.17.0 // indirect
 	golang.org/x/sync v0.7.0 // indirect
-	golang.org/x/sys v0.20.0 // indirect
-	golang.org/x/text v0.15.0 // indirect
-	golang.org/x/tools v0.21.0 // indirect
+	golang.org/x/sys v0.22.0 // indirect
+	golang.org/x/text v0.16.0 // indirect
+	golang.org/x/tools v0.21.1-0.20240508182429-e35e4ccd0d2d // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240528184218-531527333157 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
