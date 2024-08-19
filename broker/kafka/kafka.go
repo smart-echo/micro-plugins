@@ -9,9 +9,9 @@ import (
 	"github.com/IBM/sarama"
 	"github.com/google/uuid"
 	"github.com/smart-echo/micro/broker"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/codec/json"
 	log "github.com/smart-echo/micro/logger"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 type kBroker struct {

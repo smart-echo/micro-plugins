@@ -7,9 +7,9 @@ import (
 	"unicode"
 
 	"github.com/pkg/errors"
+	"github.com/smart-echo/micro/cmd"
 	log "github.com/smart-echo/micro/logger"
 	"github.com/smart-echo/micro/store"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 var (

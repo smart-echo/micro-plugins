@@ -13,15 +13,15 @@ import (
 	"sync"
 	"time"
 
-	pb "github.com/smart-echo/micro-plugins/registry/gossip/proto"
-	"google.golang.org/protobuf/proto"
 	"github.com/google/uuid"
 	"github.com/hashicorp/memberlist"
 	"github.com/mitchellh/hashstructure"
+	pb "github.com/smart-echo/micro-plugins/registry/gossip/proto"
+	"github.com/smart-echo/micro/cmd"
 	log "github.com/smart-echo/micro/logger"
 	"github.com/smart-echo/micro/registry"
-	"github.com/smart-echo/micro/util/cmd"
 	regutil "github.com/smart-echo/micro/util/registry"
+	"google.golang.org/protobuf/proto"
 )
 
 // use registry.Result int32 values after it switches from string to int32 types

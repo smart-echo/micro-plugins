@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/store"
-	"github.com/smart-echo/micro/util/cmd"
 	bolt "go.etcd.io/bbolt"
 )
 

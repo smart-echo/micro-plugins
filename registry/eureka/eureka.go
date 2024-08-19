@@ -12,8 +12,8 @@ import (
 
 	"github.com/hudl/fargo"
 	"github.com/op/go-logging"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/registry"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 type fargoConnection interface {

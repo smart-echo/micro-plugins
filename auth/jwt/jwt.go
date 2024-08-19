@@ -6,7 +6,7 @@ import (
 
 	jwtToken "github.com/smart-echo/micro-plugins/auth/jwt/token"
 	"github.com/smart-echo/micro/auth"
-	"github.com/smart-echo/micro/util/cmd"
+	"github.com/smart-echo/micro/cmd"
 )
 
 func init() {

@@ -17,6 +17,7 @@ import (
 
 	"github.com/smart-echo/micro/broker"
 	"github.com/smart-echo/micro/client"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/codec"
 	raw "github.com/smart-echo/micro/codec/bytes"
 	errors "github.com/smart-echo/micro/errors"
@@ -24,7 +25,6 @@ import (
 	"github.com/smart-echo/micro/registry"
 	"github.com/smart-echo/micro/selector"
 	"github.com/smart-echo/micro/transport"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 type httpClient struct {

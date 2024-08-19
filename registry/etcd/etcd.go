@@ -15,9 +15,9 @@ import (
 	"time"
 
 	hash "github.com/mitchellh/hashstructure"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/logger"
 	"github.com/smart-echo/micro/registry"
-	"github.com/smart-echo/micro/util/cmd"
 	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"
 	clientv3 "go.etcd.io/etcd/client/v3"
 	"go.uber.org/zap"

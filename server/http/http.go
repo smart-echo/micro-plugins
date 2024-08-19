@@ -12,13 +12,13 @@ import (
 	"time"
 
 	"github.com/smart-echo/micro/broker"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/codec"
 	"github.com/smart-echo/micro/codec/jsonrpc"
 	"github.com/smart-echo/micro/codec/protorpc"
 	"github.com/smart-echo/micro/logger"
 	"github.com/smart-echo/micro/registry"
 	"github.com/smart-echo/micro/server"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 var (

@@ -18,12 +18,12 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/smart-echo/micro/broker"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/codec/json"
 	merr "github.com/smart-echo/micro/errors"
 	"github.com/smart-echo/micro/registry"
 	"github.com/smart-echo/micro/registry/cache"
 	maddr "github.com/smart-echo/micro/util/addr"
-	"github.com/smart-echo/micro/util/cmd"
 	mnet "github.com/smart-echo/micro/util/net"
 	mls "github.com/smart-echo/micro/util/tls"
 	"golang.org/x/net/http2"

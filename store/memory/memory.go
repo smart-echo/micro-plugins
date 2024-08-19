@@ -9,8 +9,8 @@ import (
 
 	"github.com/patrickmn/go-cache"
 	"github.com/pkg/errors"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/store"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 // NewStore returns a memory store.

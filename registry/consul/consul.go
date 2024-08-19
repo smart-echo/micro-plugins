@@ -14,8 +14,8 @@ import (
 
 	consul "github.com/hashicorp/consul/api"
 	hash "github.com/mitchellh/hashstructure"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/registry"
-	"github.com/smart-echo/micro/util/cmd"
 	mnet "github.com/smart-echo/micro/util/net"
 )
 

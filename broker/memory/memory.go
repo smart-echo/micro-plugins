@@ -10,9 +10,9 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/smart-echo/micro/broker"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/logger"
 	maddr "github.com/smart-echo/micro/util/addr"
-	"github.com/smart-echo/micro/util/cmd"
 	mnet "github.com/smart-echo/micro/util/net"
 )
 

@@ -2,8 +2,8 @@
 package mucp
 
 import (
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/server"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 func init() {

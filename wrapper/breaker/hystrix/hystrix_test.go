@@ -8,7 +8,7 @@ import (
 
 	"github.com/afex/hystrix-go/hystrix"
 	"github.com/smart-echo/micro/client"
-	merrors "github.com/smart-echo/micro/errors"
+	merrors "github.com/smart-echo/micro/proto/errors/v1"
 	"github.com/smart-echo/micro/registry"
 	"github.com/smart-echo/micro/selector"
 )

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/registry"
-	"github.com/smart-echo/micro/util/cmd"
 
 	"github.com/pkg/errors"
 

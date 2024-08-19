@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/nats-io/nats.go"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/registry"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 type natsRegistry struct {

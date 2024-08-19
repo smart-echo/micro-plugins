@@ -7,8 +7,8 @@ import (
 	"time"
 
 	quic "github.com/quic-go/quic-go"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/transport"
-	"github.com/smart-echo/micro/util/cmd"
 	utls "github.com/smart-echo/micro/util/tls"
 )
 

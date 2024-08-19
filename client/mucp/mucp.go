@@ -3,7 +3,7 @@ package mucp
 
 import (
 	"github.com/smart-echo/micro/client"
-	"github.com/smart-echo/micro/util/cmd"
+	"github.com/smart-echo/micro/cmd"
 )
 
 func init() {

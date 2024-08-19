@@ -9,9 +9,9 @@ import (
 
 	"github.com/gomodule/redigo/redis"
 	"github.com/smart-echo/micro/broker"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/codec"
 	"github.com/smart-echo/micro/codec/json"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 func init() {

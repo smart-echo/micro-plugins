@@ -12,9 +12,9 @@ import (
 
 	"github.com/lib/pq"
 	"github.com/pkg/errors"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/logger"
 	"github.com/smart-echo/micro/store"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 // DefaultDatabase is the namespace that the sql store

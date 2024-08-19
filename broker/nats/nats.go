@@ -9,10 +9,10 @@ import (
 
 	nats "github.com/nats-io/nats.go"
 	"github.com/smart-echo/micro/broker"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/codec/json"
 	"github.com/smart-echo/micro/logger"
 	"github.com/smart-echo/micro/registry"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 func init() {

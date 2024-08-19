@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/redis/go-redis/v9"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/logger"
 	"github.com/smart-echo/micro/store"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 // DefaultDatabase is the namespace that the store

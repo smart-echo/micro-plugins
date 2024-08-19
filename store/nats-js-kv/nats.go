@@ -10,8 +10,8 @@ import (
 	"github.com/cornelk/hashmap"
 	"github.com/nats-io/nats.go"
 	"github.com/pkg/errors"
+	"github.com/smart-echo/micro/cmd"
 	"github.com/smart-echo/micro/store"
-	"github.com/smart-echo/micro/util/cmd"
 )
 
 var (
